@@ -5,12 +5,12 @@
 html,
 body,
 main,
-div {
+#___gatsby,
+#gatsby-focus-wrapper {
   height: 100%;
-  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  margin: 0;
 }
+
 a {
   text-decoration: underline;
   color: black;

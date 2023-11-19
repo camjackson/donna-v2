@@ -76,48 +76,35 @@ const pages = [
   },
 ];
 
-const bodyText = 'text-[15px] font-light text-end';
-
-const Text = ({ children }: PropsWithChildren<{}>) => (
-  <p className={`mb-0 mt-[15px] leading-[19px] ${bodyText}`}>{children}</p>
-);
-
 const IndexPage = () => (
   <main className="flex items-center justify-center w-full h-full bg-[#f4f5f7] p-5 bg-clip-content">
     <div
       // todo: ImgBox @media query
       style={{ backgroundImage: `url('${background}')` }}
-      className="w-[1040px] h-[693px] bg-center py-10 px-[30px]"
+      className="w-[1040px] h-[693px] bg-center py-10 px-[30px] flex flex-col justify-between text-[15px] font-light text-end"
     >
-      <div
-        // todo: VSplit @media
-        className="flex flex-col justify-between w-full h-full"
-      >
-        <div className="flex-[0]">
-          <h1 className="mx-0 mt-0 font-normal uppercase text-end mb-9 text-[32px] leading-[39px]">
-            Donna Comfort
-          </h1>
-          <ol className={`p-0 m-0 list-none leading-[26px] ${bodyText}`}>
-            {pages.map((page) => (
-              <li key={page.url}>
-                <Link to={page.url}>{page.label}</Link>
-              </li>
-            ))}
-            <li>
-              <a href={cv} target="_blank">
-                ARTIST CV
-              </a>
+      <div>
+        <h1 className="font-normal uppercase mb-9 text-[32px] leading-[39px]">
+          Donna Comfort
+        </h1>
+        <ol className={`leading-[26px]`}>
+          {pages.map((page) => (
+            <li key={page.url}>
+              <Link to={page.url}>{page.label}</Link>
             </li>
-          </ol>
-          <Text>
-            Contact:{' '}
-            <a href="mailto:donna@donnacomfort.com">donna@donnacomfort.com</a>
-          </Text>
-        </div>
-        <div className="flex-[0]">
-          <Text>© Donna Comfort</Text>
-        </div>
+          ))}
+          <li>
+            <a href={cv} target="_blank">
+              ARTIST CV
+            </a>
+          </li>
+        </ol>
+        <p className="mt-[14px]">
+          Contact:{' '}
+          <a href="mailto:donna@donnacomfort.com">donna@donnacomfort.com</a>
+        </p>
       </div>
+      <p className="relative top-0.5">© Donna Comfort</p>
     </div>
   </main>
 );
