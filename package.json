@@ -1,13 +1,10 @@
 {
-  "name": "my-gatsby-site",
+  "name": "donnacomfort.com",
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "private": true,
-  "description": "my-gatsby-site",
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "Website for Donna Comfort",
   "scripts": {
-    "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
