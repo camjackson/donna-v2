@@ -15,51 +15,51 @@ export const Head: HeadFC = () => (
 
 const pages = [
   {
-    url: './abstraction-2023',
+    url: '/abstraction-2023',
     label: 'ABSTRACTION | 2023',
   },
   {
-    url: './5X5-walls',
+    url: '/5X5-walls',
     label: '5 X 5 Walls | 2020',
   },
   {
-    url: './objects-for-the-wall-continued-2019',
+    url: '/objects-for-the-wall-continued-2019',
     label: "OBJECTS FOR THE WALL 'CONTINUED' | 2019",
   },
   {
-    url: './drawing-folio-3-abstraction-2019',
+    url: '/drawing-folio-3-abstraction-2019',
     label: 'DRAWING FOLIO 3: ABSTRACTION | 2019',
   },
   {
-    url: './support-18',
+    url: '/support-18',
     label: 'SUPPORT 18 | 2018',
   },
   {
-    url: './objects-for-the-wall-2018',
+    url: '/objects-for-the-wall-2018',
     label: 'OBJECTS FOR THE WALL | 2018',
   },
   {
-    url: './abstraction-2018',
+    url: '/abstraction-2018',
     label: 'ABSTRACTION TWENTYEIGHTEEN | 2018',
   },
   {
-    url: './five-walls-melbourne-2017',
+    url: '/five-walls-melbourne-2017',
     label: 'MULTIPLES | 2017',
   },
   {
-    url: './five-walls-melbourne-2016',
+    url: '/five-walls-melbourne-2016',
     label: 'INTERVENTION OF COLOUR | 2016',
   },
   {
-    url: './allot-five-walls-melbourne-2016',
+    url: '/allot-five-walls-melbourne-2016',
     label: 'ALLOT | 2016',
   },
   {
-    url: './monash-university-melbourne-2015',
+    url: '/monash-university-melbourne-2015',
     label: 'MONASH UNIVERSITY | 2015',
   },
   {
-    url: './monash-university-melbourne-2012-15',
+    url: '/monash-university-melbourne-2012-15',
     label: 'MONASH UNIVERSITY | 2012-15',
   },
 ];
@@ -92,7 +92,7 @@ const IndexPage = () => (
             <a href="mailto:donna@donnacomfort.com">donna@donnacomfort.com</a>
           </p>
         </div>
-        <p>© Donna Comfort</p>
+        <p className="leading-[18px]">© Donna Comfort</p>
       </div>
     </div>
   </main>
