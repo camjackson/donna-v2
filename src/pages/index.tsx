@@ -12,19 +12,7 @@ export const Head: HeadFC = () => (
     />
   </>
 );
-/*
-const ImgBox = styled.div`
-  @media (max-height: 734px) {
-    height: 100%;
-  }
-`;
 
-const VSplit = styled.div`
-  @media (max-width: 700px) {
-    background-color: #d2d2d2bf;
-  }
-`;
-*/
 const pages = [
   {
     url: './abstraction-2023',
@@ -77,34 +65,35 @@ const pages = [
 ];
 
 const IndexPage = () => (
-  <main className="flex items-center justify-center w-full h-full bg-[#f4f5f7] p-5 bg-clip-content">
+  <main className="flex items-center justify-center w-full h-full bg-[#f4f5f7] md:p-5 bg-clip-content">
     <div
-      // todo: ImgBox @media query
       style={{ backgroundImage: `url('${background}')` }}
-      className="w-[1040px] h-[693px] bg-center py-10 px-[30px] flex flex-col justify-between text-[15px] font-light text-end"
+      className="w-[1040px] h-[693px] bg-center md:py-10 md:px-[30px] text-[15px] font-light text-end max-h-full"
     >
-      <div>
-        <h1 className="font-normal uppercase mb-9 text-[32px] leading-[39px]">
-          Donna Comfort
-        </h1>
-        <ol className={`leading-[26px]`}>
-          {pages.map((page) => (
-            <li key={page.url}>
-              <Link to={page.url}>{page.label}</Link>
+      <div className="bg-[#d2d2d2bf] md:bg-inherit h-full flex flex-col justify-between py-10 px-[30px] md:py-0 md:px-0 overflow-auto">
+        <div>
+          <h1 className="font-normal uppercase mb-9 text-[32px] leading-[39px]">
+            Donna Comfort
+          </h1>
+          <ol className={`leading-[26px]`}>
+            {pages.map((page) => (
+              <li key={page.url}>
+                <Link to={page.url}>{page.label}</Link>
+              </li>
+            ))}
+            <li>
+              <a href={cv} target="_blank">
+                ARTIST CV
+              </a>
             </li>
-          ))}
-          <li>
-            <a href={cv} target="_blank">
-              ARTIST CV
-            </a>
-          </li>
-        </ol>
-        <p className="mt-[14px]">
-          Contact:{' '}
-          <a href="mailto:donna@donnacomfort.com">donna@donnacomfort.com</a>
-        </p>
+          </ol>
+          <p className="mt-[14px]">
+            Contact:{' '}
+            <a href="mailto:donna@donnacomfort.com">donna@donnacomfort.com</a>
+          </p>
+        </div>
+        <p>© Donna Comfort</p>
       </div>
-      <p className="relative top-0.5">© Donna Comfort</p>
     </div>
   </main>
 );
