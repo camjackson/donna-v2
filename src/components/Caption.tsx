@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
 const Row = ({ children }: PropsWithChildren) => (
-  <p className="flex mx-auto mt-1 text-[14px] font-light leading-[17px]">
+  <p className="flex flex-wrap mx-auto mt-1 text-[14px] font-light leading-[17px]">
     {children}
   </p>
 );

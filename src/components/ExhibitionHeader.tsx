@@ -19,7 +19,7 @@ type Props = {
 
 const ExhibitionHeader = ({ title, location, year, splitTitle }: Props) =>
   splitTitle ? (
-    <div>
+    <div className="max-w-full">
       <H2>
         {title && [<Span key="0">{title}</Span>, <Span key="1">|</Span>]}
         <Span>{location}</Span>
